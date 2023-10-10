@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Membuat Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Form Buku Tamu</h2>
+        <form>
+            <div class="form-group">
+                <label for="nama_lengkap">Nama Lengkap:</label>
+                <input type="text" class="form-control" id="nama_lengkap" name="nama_lengkap" size="40">
+            </div>
+            <div class="form-group">
+                <label>Jenis Kelamin:</label><br>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="laki_laki" name="jenis_kelamin" value="L">
+                    <label class="form-check-label" for="laki_laki">Laki-laki</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="perempuan" name="jenis_kelamin" value="P">
+                    <label class="form-check-label" for="perempuan">Perempuan</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat Tinggal:</label>
+                <input type="text" class="form-control" id="alamat" name="alamat" size="40">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="email" name="email" size="40">
+            </div>
+            <div class="form-group">
+                <label>Aktif pada sosial media:</label><br>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="facebook" name="facebook" value="Ya">
+                    <label class="form-check-label" for="facebook">Facebook</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="twitter" name="twitter" value="Ya">
+                    <label class="form-check-label" for="twitter">Twitter</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="instagram" name="Instagram" value="Ya">
+                    <label class="form-check-label" for="instagram">Instagram</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="path" name="path" value="Ya">
+                    <label class="form-check-label" for="path">Path</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="info">Mengetahui web ini dari:</label>
+                <select class="form-control" id="info" name="info">
+                    <option selected="select">-= Pilih =-</option>
+                    <option value="web">Web</option>
+                    <option value="surat kabar">Surat Kabar</option>
+                    <option value="teman kerabat">Teman Kerabat</option>
+                    <option value="browsing internet">Browsing Internet</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pesan">Pesan:</label>
+                <textarea class="form-control" id="pesan" name="pesan" cols="40"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
